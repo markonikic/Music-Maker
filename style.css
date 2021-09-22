@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    border: border-box;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.app{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
+header p{
+    font-size: 20px;
+}
+
+.pads{
+    background: lightblue;
+    width: 100%;
+    display: flex;
+}
+
+.pads > div{
+    height: 100px;
+    width: 100px;
+    flex: 1;
+}
+
+.pad1{
+    background: #60d394;
+}
+
+.pad2{
+    background: #d36060;
+}
+
+.pad3{
+    background: #c060d3;
+}
+
+.pad4{
+    background: #d3d160;
+}
+
+.pad5{
+    background: #6860d3
+}
+
+.pad6{
+    background: #00d3d3;
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+.visual > div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0;
+    z-index: -1;
+}
+
+i{
+    color: rgb(70, 70, 70);
+    margin: 0px 10px 0px 10px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 200px;
+    height: 15px;
+    border-radius: 5px;  
+    background-image: url(./colors.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #000000;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+  }
